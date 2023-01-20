@@ -5,28 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/faviconlogo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inika&family=Inter:wght@300;400;700&display=swap"
         rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="container">
     <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="logo-vector"><img src="./img/logo_vector.svg" alt="logo">Plants</li>
-                    <li class="nav-welcome"><a href="#welcome" class="nav-link">Home</a></li>
-                    <li class="nav-aboutUs"><a href="#aboutUs" class="nav-link">About us</a></li>
-                    <li class="nav-service"><a href="#service" class="nav-link">Service</a></li>
-                    <li class="nav-prices"><a href="#prices" class="nav-link">Price</a></li>
-                    <li class="nav-contactus"><a href="#contactus" class="nav-link">Contacts</a></li>
-                </ul>
-            </nav>
+        <div class="hamb-menu hamb-menu-active">
+        <nav class="navbar">
+            <div class="nav-logo">
+            <img src="./img/logo_vector.svg" alt="logo" class="logo-vector">
+            <p class="logo-text">Plants</p>
+        </div>
+    <ul class="nav-menu">
+        <li class="nav-item"><a href="#welcome" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#aboutUs" class="nav-link">About us</a></li>
+        <li class="nav-item"><a href="#service" class="nav-link">Service</a></li>
+        <li class="nav-item"><a href="#prices" class="nav-link">Price</a></li>
+        <li class="nav-item"><a href="#contactus" class="nav-link">Contacts</a></li>
+    </ul>
+    <div class="hamb">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+        </nav>
+        <div class="navbar-overlay"></div>
         </div>
     </header>
     <main>
@@ -37,8 +48,7 @@
                     <div class="wel-body">
                         <h1 class="wel-body-head">We grow<span class=colorgreen> plants</span> and give you oxygen</h1>
                         <p class="wel-body-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the <br>
-                            industry's standard dummy text ever since the 1500s.</p>
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                         <form><button class="wel-btn">LEARN MORE</button></form>
                     </div>
                 </div>
@@ -46,14 +56,14 @@
             <section class="aboutUs" id="aboutUs">
                 <div class="about">
                     <div class="about-body">
-                        <h2 class="about-body-head">We are <span class="colororange">professional experienced</span>
+                        <h2 class="about-body-head">We are <span class="colororange">professional             experienced</span>
                             gardeners</h2>
-                        <p class="about-body-text">Lorem Ipsum is simply dummy text of the printing and<br>typesetting
+                        <p class="about-body-text">Lorem Ipsum is simply dummy text of the printing and typesetting
                             industry. Lorem Ipsum has been the
-                            industry's<br>standard dummy text ever since the 1500s, when an unknown printer took a
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a
                             galley of type
                             and scrambled it to make a type specimen book. It has survived not only five centuries, but
-                            also<br>the
+                            also the
                             leap into electronic typesetting, remaining essentially unchanged.</p>
                     </div>
                     <img class="houseplan_1" src="./img/houseplan_1.png" alt="houseplan">
@@ -121,22 +131,24 @@
                         <h2 class="price-head">Prices</h2>
                         <div class="komentas">
                             <img class="arrow" src="./img/accordion_btn.svg" alt="arrow">
-                        <input type="checkbox" id="bethosekom1" class="gamutom-esoutasto">
+                            <input type="checkbox" id="bethosekom1" class="gamutom-esoutasto">
                             <label for="bethosekom1">Basics</label>
-                                <div>
-                                    <p class="komentas-text">Release of Letraset sheets containing.Lorem Ipsum passages, and more recently.</p>
-                                    <p class="komentas-price"><span class="color-orange-price">$15</span> / per hour</p>
-                                    <form>
-                                        <button class="btnprice">Order</button>
-                                    </form>
-                                </div>
-                                    <br>
-                                    <img class="arrow" src="./img/accordion_btn.svg" alt="arrow">
-                                    <input type="checkbox" id="bethosekom2" class="gamutom-esoutasto">
+                            <div>
+                                <p class="komentas-text">Release of Letraset sheets containing.Lorem Ipsum passages, and
+                                    more recently.</p>
+                                <p class="komentas-price"><span class="color-orange-price">$15</span> / per hour</p>
+                                <form>
+                                    <button class="btnprice">Order</button>
+                                </form>
+                            </div>
+                            <br>
+                            <img class="arrow" src="./img/accordion_btn.svg" alt="arrow">
+                            <input type="checkbox" id="bethosekom2" class="gamutom-esoutasto">
                             <label for="bethosekom2">Standard</label>
-                        <div>
-                            <p class="komentas-text">Release of Letraset sheets containing.Lorem Ipsum passages, and more recently.</p>
-                            <p class="komentas-price"><span class="color-orange-price">$25</span> / per hour</p>
+                            <div>
+                                <p class="komentas-text">Release of Letraset sheets containing.Lorem Ipsum passages, and
+                                    more recently.</p>
+                                <p class="komentas-price"><span class="color-orange-price">$25</span> / per hour</p>
                                 <form>
                                     <button class="btnprice">Order</button>
                                 </form>
@@ -146,14 +158,15 @@
                             <input type="checkbox" id="bethosekom3" class="gamutom-esoutasto">
                             <label for="bethosekom3">Pro care</label>
                             <div>
-                                <p class="komentas-text">Release of Letraset sheets containing.Lorem Ipsum passages, and more recently.</p>
+                                <p class="komentas-text">Release of Letraset sheets containing.Lorem Ipsum passages, and
+                                    more recently.</p>
                                 <p class="komentas-price"><span class="color-orange-price">$35</span> / per hour</p>
                                 <form>
                                     <button class="btnprice">Order</button>
                                 </form>
                             </div>
                         </div>
-                        </div>
+                    </div>
                     <div class="price-text">
                         <h2 class="price-text-head">Our best <span class="colorgreen-price">gardeners</span> are ready
                             to
@@ -248,11 +261,12 @@
                                 </form>
                             </div>
                         </div>
-                </div>
+                    </div>
                 </div>
             </section>
         </div>
     </main>
+    </div>
     <footer class="footer">
         <div class="container">
             <ul class="footer-list">
@@ -272,6 +286,7 @@
             </ul>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>

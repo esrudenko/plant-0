@@ -1,1 +1,18 @@
-console.log('1. Вёрстка валидная: "Document checking completed. No errors or warnings to show."-надпись присутствует. +10\n2. Вёрстка семантическая: В коде странице присутствуют: <header>, <main>, <footer> (+3), пять элементов <section> (+3), один заголовок <h1> (+3), четыре заголовка <h2> (+3), один элемент <nav> (+3), два списка ul > li > a (+3), пять кнопок <button> (+2). ИТОГО: +20\n3. Вёрстка соответствует макету: блок <header> - соответствует(+6), секция welcome - соответствует(+7), секция about - соответствует (+7), секция service - соответствует (+7), секция prices - соответствует (+7), секция contacts - соответствует (+7), блок <footer> - соответствует (+7). ИТОГО: +48\n4. Требования к css: для построения сетки используются флексы (+2), при уменьшении масштаба страницы браузера вёрстка размещается по центру, а не сдвигается в сторону (+2), фоновый цвет тянется на всю ширину страницы (+2), иконки добавлены в формате .svg (+2), изображения добавлены в формате .png (+2), есть favicon (+2). ИТОГО: +12\n5. Интерактивность, реализуемая через css: плавная прокрутка по якорям (+5), cсылки в футере при нажатии на них ведут на гитхаб автора проекта и на страницу курса https://rs.school/js-stage0/ (+5), интерактивность включает в себя не только изменение внешнего вида курсора, но и другие визуальные эффекты, например, изменение цвета фона или цвета шрифта. Если в макете указаны стили при наведении и клике, для элемента указываем эти стили (+5), обязательное требование к интерактивности: плавное изменение внешнего вида элемента при наведении и клике не влияющее на соседние элементы (+5). ИТОГО: +20\nВсе пункты Plants#1 выполнены - 100 баллов')
+let hamb = document.querySelector(".hamb");
+let navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
+let navOverlay = document.querySelector(".navbar-overlay")
+
+hamb.addEventListener("click", mobileMenu);
+function mobileMenu() {
+	hamb.classList.toggle("active");
+	navMenu.classList.toggle("active");
+	navOverlay.classList.toggle("active");
+}
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+navOverlay.addEventListener("click", closeMenu);
+function closeMenu() {
+	hamb.classList.remove("active");
+	navMenu.classList.remove("active");
+	navOverlay.classList.remove("active");
+}
