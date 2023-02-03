@@ -180,10 +180,12 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
 }
 
@@ -218,6 +220,10 @@ body {
 .nav-link:hover {
   color: rgba(224, 103, 51, 1);
   font-weight: bold;
+}
+
+.welcome {
+  width: 100%;
 }
 
 .wel {
@@ -281,6 +287,10 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
+.aboutUs {
+  width: 100%;
+}
+
 .about {
   display: flex;
   background-color: rgba(255, 255, 255, 1);
@@ -318,6 +328,10 @@ body {
 
 .houseplan_1 {
   margin: 93px 0 94px 153px;
+}
+
+.service {
+  width: 100%;
 }
 
 .serv {
@@ -461,6 +475,10 @@ body {
   color: rgba(113, 113, 113, 1);
   margin-top: 15px;
   margin-bottom: 36px;
+}
+
+.prices {
+  width: 100%;
 }
 
 .price {
@@ -666,6 +684,10 @@ body {
   margin-top: 35px;
 }
 
+.contactus {
+  width: 100%;
+}
+
 .contact {
   display: flex;
   background-color: rgba(237, 242, 236, 1);
@@ -856,6 +878,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   list-style: none;
+  padding-top: 5px;
 }
 
 .callus:hover {
@@ -1694,9 +1717,10 @@ body {
     height: 26px;
     font-size: 10px;
     line-height: 13px;
+    padding: 7px;
   }
 
-  *.footer-list {
+  .footer-list {
     flex-direction: row;
     flex-wrap: wrap;
     width: 210px;
